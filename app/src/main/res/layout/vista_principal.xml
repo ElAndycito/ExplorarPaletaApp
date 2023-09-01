@@ -1,0 +1,100 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#783A24">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextClock
+            android:id="@+id/tc_hora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:format24Hour="HH:mm"
+            android:textSize="28sp"
+            android:textStyle="bold|italic" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/rb_london"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="London"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_beijing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beijing"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_nueva_york"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nueva York"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_bogota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bogotá"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cb_transparente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transparente"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/cb_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cambiar Color"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/cb_tamano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cambiar Tamaño"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <Switch
+            android:id="@+id/s_ocultar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ocultar"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/unab_logo"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
